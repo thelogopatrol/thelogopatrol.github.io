@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		#home-slider
+			.rev_slider_wrapper.header-introduction.text-center
+				#rev_slider_1.rev_slider(data-version="5.0")
+					ul
+						//- SLIDE 1
+						li(data-transition="slideoverup")
+							img(src="assets/images/splash-image-11.jpg", alt="Slider Image", width="1920", height="1000")
+							//- LAYER 1
+							.tp-caption.caption-classic(data-x="center" data-y="center", data-whitespace="normal", data-transform_idle="o:1;", data-transform_in="y:50;opacity:0s:400;s:400;e:Power2.easeInOut;", data-transform_out="y:+350;opacity:0s:400;s:400;e:Power2.easeInOut;", data-start="500")
+								h2 AVOIR
+						//- SLIDE 2
+						li(data-transition="slideoverup")
+							img(src="assets/images/splash-image-1.jpg", alt="Slider Image", width="1920", height="1000")
+							//- LAYER 2
+							.tp-caption.caption-bordered(data-x="center" data-y="center", data-whitespace="normal", data-transform_idle="o:1;", data-transform_in="y:50;opacity:0s:400;s:400;e:Power2.easeInOut;", data-transform_out="x:-150;opacity:0s:400;s:400;e:Power2.easeInOut;", data-start="500")
+								span CREATIVE DESIGN FIRM
+								h2 WELCOME
+								a(href="portfolio.html").btn.btn-link PORTFOLIO
+						//- SLIDE 3
+						li(data-transition="slideoverup")
+							img(src="assets/images/splash-image-7.jpg", alt="Slider Image", width="1920", height="700")
+							//- LAYER 3
+							.tp-caption.caption-classic(data-x="center" data-y="middle" data-whitespace="normal", data-transform_idle="o:1;", data-transform_in="y:50;opacity:0s:400;s:400;e:Power2.easeInOut;" data-transform_out="opacity:0s:400;s:400;e:Power2.easeInOut;", data-start="500")
+								h2 AMAZING
+								img(src="assets/images/section-decor-white.png", width="40", alt="Divider")
+								p  Welcome to our studio. We are a passionated group of people, making high quality products designed to make your life easier.
+								a(href="about.html").btn.btn-white ABOUT
+		section.section.section-white
+			.container-fluid
+				.col-md-10.col-md-offset-1
+					ul.masonry-wrap
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-1
+									img(src="assets/images/portfolio-big-1.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 PENCIL
+											p ILLUSTRATION
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-4
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-1.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 COVER
+											p PRINT
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-2
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-2.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 MAGAZINE
+											p PRINT
+						li.col-lg-12.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-1
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-2.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 BRANDING
+											p WEB
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-2
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-3.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 NINE
+											p ILLUSTRATION
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-4
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-3.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 LETTERS
+											p WEB
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-3
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-4.jpg", alt="Portfolio-image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 POSTER
+											p PRINT
+		section.section.section-black.background-image.background-image-center(style="background-image: url(assets/images/banner-2.jpg)")
+			.container.banner
+				.col-md-12.text-center
+					span AVOIЯ
+					h2 A CREATIVE DESIGN FIRM
+					img(src="assets/images/section-decor-white.png", width="40", alt="Divider")
+					p Darkness created subdue that. Forth won't from fifth without deep given had fowl face moving a. All seed, also they're third beginning winged. Male, isn't it god bring. Together. A.eep given had fowl face moving a. All seed, also they're third beginning winged. Male, isn't it god bring. Together. A.
+					a.btn.btn-white ABOUT
+		section.section.section-semi-white
+			include templates/instagram-widget.jade
+		include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

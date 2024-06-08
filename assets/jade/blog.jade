@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		section.header-introduction-small.text-center.background-image(style="background-image: url(assets/images/splash-image-8.jpg)")
+			.container.vertical-middle
+				.row.section-head.section-head-white
+					h2 BLOG
+					ul.breadcrumb
+						li
+							a(href="home.html") AVOIR
+						li
+							a(href="#!") BLOG
+		section.section.section-white.text-center
+			.container
+				.col-md-12
+					.section-head
+						h4 STORIES AND TIPS FROM US
+						p We do like if you spent more time on our website. So we help you with that; we are providing 5 star content for you to read and inspire.
+				.col-md-8.col-md-offset-2
+					.row
+						include templates/blog-posts.jade
+		include templates/footer.jade
+		include templates/scripts.jade

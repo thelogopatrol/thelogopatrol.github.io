@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		section.header-introduction-small.text-center.background-image(style="background-image: url(assets/images/splash-image-10.jpg)")
+			.container.vertical-middle.text-center
+				.row.section-head.section-head-white
+					h2 BUSSINESS CARDS
+					ul.breadcrumb
+						li
+							a(href="home.html") AVOIR
+						li
+							a(href="#!") PORTFOLIO-SINGLE
+		section.section
+			.container-fluid
+				.col-md-10.col-md-offset-1.text-center
+					.portfolio-single-introduction
+						span.os-animation BRANDING
+						h3.os-animation BUSSINESS CARDS
+						img.os-animation(src="assets/images/section-decor-black.png", width="40", alt="Divider")
+						p.os-animation A big challenge, for a big brand. With great power comes great responsibility. We love to design things like this. We used our advanced knowledge in technology and design to bring out this result.
+					.portfolio-single-content
+						.col-md-12.margin-top.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.row
+								img(src="assets/images/portfolio-single-1.jpg", alt="Project Image")
+						.col-md-12.margin-top.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.row
+								img(src="assets/images/portfolio-single-2.jpg", alt="Project Image")
+						.col-md-12.margin-top.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.row
+								img(src="assets/images/portfolio-single-3.jpg", alt="Project Image")
+						.col-md-12.margin-top.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.row
+								img(src="assets/images/portfolio-single-4.jpg", alt="Project Image")
+					.portfolio-single-footer
+						a(href="#!").btn.btn-black VISIT PROJECT
+		include templates/footer.jade
+		include templates/scripts.jade

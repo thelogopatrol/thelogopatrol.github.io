@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		section.header-introduction-small.text-center.background-image(style="background-image: url(assets/images/splash-image-3.jpg)")
+			.container.vertical-middle
+				.row.section-head.section-head-white
+					h2 PORTFOLIO
+					ul.breadcrumb
+						li
+							a(href="home.html") AVOIR
+						li
+							a(href="#!") PORTFOLIO
+		section.section.section-white
+			.container-fluid
+				.col-md-10.col-md-offset-1
+					ul.masonry-wrap
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-1
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-1.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 PENCIL
+											p ILLUSTRATION
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-4
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-1.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 COVER
+											p PRINT
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-2
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-2.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 MAGAZINE
+											p PRINT
+						li.col-lg-12.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-1
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-2.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 BRANDING
+											p WEB
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-2
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-3.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 NINE
+											p ILLUSTRATION
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-4
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-3.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 LETTERS
+											p WEB
+						li.col-lg-6.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+							.masonry-item.background-color-3
+								a(href="portfolio-single.html")
+									img(src="assets/images/portfolio-big-4.jpg", alt="Portfolio Image")
+									.masonry-item-overlay
+										.masonry-item-overlay-inner
+											h2 POSTER
+											p PRINT
+		include templates/footer.jade
+		include templates/scripts.jade

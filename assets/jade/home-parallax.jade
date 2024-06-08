@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		#skrollr-body
+			.rev_slider_wrapper.header-introduction.text-center(style=" background-color: #131313; background-image: url(assets/images/parallax-background-2.png);")
+				#rev_slider_3.rev_slider(data-version="5.0")
+					ul
+						//- SLIDE 1
+						li(data-transition="slideoverup", data-bgparallax="10")
+							//- LAYER 1
+							.tp-caption.rs-parallaxlevel-3.caption-classic.tp-caption.tp-static-layer(data-x="center" data-hoffset="30" data-y="middle" data-voffset="-70" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5")
+								span DESIGN FIRM
+							.tp-caption.rs-parallaxlevel-2.caption-classic.tp-caption.tp-static-layer(data-x="center" data-hoffset="30" data-y="middle" data-voffset="30" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5")
+								h2 AVOIR
+							.tp-caption.rs-parallaxlevel-1.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="30" data-y="middle" data-voffset="30" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-1.png); height:600px; width:600px; z-index=0")
+							.tp-caption.rs-parallaxlevel-3.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="000" data-y="middle" data-voffset="300" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-3.png); height:140px; width:140px;")
+							.tp-caption.rs-parallaxlevel-1.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="600" data-y="middle" data-voffset="100" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-2.png); height:100px; width:100px;")
+							.tp-caption.rs-parallaxlevel-2.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="300" data-y="middle" data-voffset="-240" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-4.png); height:100px; width:100px;")
+							.tp-caption.rs-parallaxlevel-1.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="-500" data-y="middle" data-voffset="-140" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-5.png); height:150px; width:150px;")
+							.tp-caption.rs-parallaxlevel-1.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="0" data-y="middle" data-voffset="0" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-6.png); height:150px; width:150px;")
+							.tp-caption.rs-parallaxlevel-2.tp-caption.tp-static-layer.background-image(data-x="center" data-hoffset="0" data-y="middle" data-voffset="0" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="500" data-basealign="slide"  data-startslide="0" data-endslide="5", style="background-image: url(assets/images/parallax-element-7.png); height:150px; width:150px;")
+			section.section.section-white.background-image.background-image-center(style="background-image: url(assets/images/parallax-background-1.png)")
+				.container-fluid
+					.col-md-10.col-md-offset-1
+						.parallax-wrap
+							.col-lg-4.padding-top.margin-top
+								.parallax-item.background-color-1(data-top-bottom="transform: translateY(-200px);", data-bottom-top="transform: translateY(700px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-1.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 PENCIL
+												p ILLUSTRATION
+							.col-lg-4
+								.parallax-item.background-color-4(data-top-bottom="transform: translateY(-140px);", data-bottom-top="transform: translateY(140px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-2.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 COVER
+												p PRINT
+							.col-lg-4.padding-top.margin-top
+								.parallax-item.background-color-2(data-top-bottom="transform: translateY(-166.85px);", data-bottom-top="transform: translateY(52.21px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-3.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 MAGAZINE
+												p PRINT
+							.col-lg-12
+								.parallax-item.background-color-1(data-top-bottom="transform: translateY(-160.15px);", data-bottom-top="transform: translateY(92.21px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/portfolio-big-2.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 BRANDING
+												p WEB
+							.col-lg-6
+								.parallax-item.background-color-2(data-top-bottom="transform: translateY(-140.85px);", data-bottom-top="transform: translateY(452.21px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-4.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 NINE
+												p ILLUSTRATION
+							.col-lg-4.col-lg-offset-1
+								.parallax-item.background-color-4(data-top-bottom="transform: translateY(-100.85px);", data-bottom-top="transform: translateY(652.21px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-5.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 TEA POT
+												p WEB
+							.col-lg-6
+								.parallax-item.background-color-3(data-top-bottom="transform: translateY(-20.85px);", data-bottom-top="transform: translateY(252.21px);")
+									a(href="portfolio-single.html")
+										img(src="assets/images/parallax-image-6.jpg", alt="Portfolio Image")
+										.masonry-item-overlay
+											.masonry-item-overlay-inner
+												h2 POSTER
+												p PRINT
+			section.section.section-black.background-image.background-image-center.section-overlay-dark(style="background-image: url(assets/images/banner-1.jpg)", data-center="background-position: 50% 0px;"
+	        data-top-bottom="background-position: 50% -100px;")
+				.container.banner
+					.col-md-12.text-center
+						span AVOIЯ
+						h2 A CREATIVE DESIGN FIRM
+						img(src="assets/images/section-decor-white.png", width="40", alt="Divider")
+						p Darkness created subdue that. Forth won't from fifth without deep given had fowl face moving a. All seed, also they're third beginning winged. Male, isn't it god bring. Together. A.eep given had fowl face moving a. All seed, also they're third beginning winged. Male, isn't it god bring. Together. A.
+						a.btn.btn-white ABOUT
+			section.section.section-semi-white
+				include templates/instagram-widget.jade
+			include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.parallax.min.js")
+		script var s = skrollr.init();

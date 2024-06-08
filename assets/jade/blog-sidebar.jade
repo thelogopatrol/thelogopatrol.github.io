@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		include templates/loader.jade
+		include templates/navigation.jade
+		section.header-introduction-small.text-center.background-image(style="background-image: url(assets/images/splash-image-8.jpg)")
+			.container.vertical-middle
+				.row.section-head.section-head-white
+					h2 BLOG
+					ul.breadcrumb
+						li
+							a(href="home.html") AVOIR
+						li
+							a(href="#!") BLOG
+		section.section.section-white.text-center
+			.container
+				.col-md-12
+					.section-head
+						h4 STORIES AND TIPS FROM US
+						p We do like if you spent more time on our website. So we help you with that; we are providing 5 star content for you to read and inspire.
+				.col-md-4.margin_top.text-left.margin-top
+					.widget
+						form(action="").search_form.clearfix
+							input(type="text", placeholder="SEARCH THE SITE").form-control
+					.widget
+						h4 ABOUT
+						p Darkness midst stars for seas can't moving us them made fruit darkness Over bring, open greater fruitful multiply day, male lesser our.
+						a.btn.btn-link(href="about.html") MORE
+					.widget
+						h4 Latest Posts
+						ul.media-list
+							li.media
+								.media-left
+									a(href="#!")
+										img(src="assets/images/portfolio-grid-3.jpg", width="70").media-object
+									.media-body
+										a(href="portfolio-single.html")
+											h5 Magazine
+										p A branding concept.
+							li.media
+								.media-left
+									a(href="#!")
+										img(src="assets/images/portfolio-grid-4.jpg", width="70").media-object
+									.media-body
+										a(href="portfolio-single.html")
+											h5 Cover
+										p Full website project
+							li.media
+								.media-left
+									a(href="#!")
+										img(src="assets/images/portfolio-grid-1.jpg", width="70").media-object
+									.media-body
+										a(href="portfolio-single.html")
+											h5 Nine
+										p Concert poster.
+					.widget
+						h4 Tags
+						ul.tags
+							li 
+								a(href="#!") Creative
+							li 
+								a(href="#!") Amazing
+							li 
+								a(href="#!") Brand
+							li 
+								a(href="#!") Website
+							li 
+								a(href="#!") WordPress
+							li 
+								a(href="#!") Envato
+							li 
+								a(href="#!") Design
+							li 
+								a(href="#!") Diamonds
+					.widget
+						h4 Archive
+						ul.archive
+							li 
+								a(href="#!") April
+							li 
+								a(href="#!") May
+							li 
+								a(href="#!") June
+				.col-md-8
+					.row
+						include templates/blog-posts.jade
+		include templates/footer.jade
+		include templates/scripts.jade
